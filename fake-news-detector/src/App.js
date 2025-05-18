@@ -6,12 +6,14 @@ function App() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
 
+  
+
   const checkFakeNews = async () => {
     if (!text.trim()) return;
 
     setLoading(true);
     setResult("");
-
+    
     try {
       const response = await fetch("http://127.0.0.1:5000/predict", {
         method: "POST",
