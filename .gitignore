@@ -3,5 +3,4 @@ __pycache__/
 *.pyc
 *.pkl
 *.bin
-fake_news_model/
 node_modules/
