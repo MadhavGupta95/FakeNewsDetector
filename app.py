@@ -3,10 +3,8 @@ import torch
 from transformers import AlbertTokenizer, AlbertForSequenceClassification
 import torch.nn.functional as F
 from flask_cors import CORS
-
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
-
+CORS(app)
 # Load model and tokenizer
 model_path = "/home/emdee/Desktop/Ip-2/FakeNews-master/fake_news_model"  # adjust if needed
 tokenizer = AlbertTokenizer.from_pretrained(model_path)
